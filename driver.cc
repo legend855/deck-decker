@@ -1,8 +1,5 @@
 /*
 * Author: Patrick Kyoyetera
-* Title: Project #2
-* Description: A program that imitates the game play of poker 
-* Date: Sunday, May 1, 2016
 */
 
 #include "cards.h"
@@ -39,17 +36,5 @@ int main(int argc, char* argv[]) {
 	betterHand(p1_hand, p2_hand);
 
 	*/
-	//		cout << newDeck.deck.size() << endl;
-	
-	//
-	
-	
-		
-	/*int strength = evaluateHand(dealt);
-	cout << "Strength = " << strength << endl;
-	/*
-	sortHand(dealt);
-	for(std::vCard::iterator it=dealt.begin(); it!=dealt.end(); ++it)
-		cout << (*it).toString() << "\t"  << endl;
-	*/	
+
 }
