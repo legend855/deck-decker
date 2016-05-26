@@ -1,8 +1,5 @@
 /*
 * Author: Patrick Kyoyetera
-* Title: Project #2
-* Description: A program that imitates the game play of poker 
-* Date: Sunday, May 1, 2016
 */
 #include "hands.h"
 
