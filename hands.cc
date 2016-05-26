@@ -3,6 +3,7 @@
 */
 #include "hands.h"
 
+//evaluate the strength of a hand
 int evaluateHand(vCard& hHand){
 	int handStrength=0;
 	if(hasPair(hHand))	
@@ -19,7 +20,7 @@ int evaluateHand(vCard& hHand){
 		handStrength=6;
 	return handStrength;
 }
-
+//strength to string name 
 string handType_to_String (int strength) {
 	string type;
 	switch(strength) {
@@ -42,17 +43,19 @@ string handType_to_String (int strength) {
 	}
 	return type;
 }
-
+//check which card has greater face value 
 bool sortF(Card& _card1, Card& _card2) {
 	return(_card1.getFace()<_card2.getFace());	
 }
+//check which card has greater suit value 
 bool sortS(Card& _card1, Card& _card2) {
 	return (_card1.getSuit()<_card2.getSuit());
 }
-
+//sort cards in hand in increasing face value 
 void sortByFace(vCard& _hand) {
 	std::sort(_hand.begin(), _hand.end(), sortF);
 }
+//sort cards in hand in increasing suit value 
 void sortBySuit(vCard& _hand) {
 	std::sort(_hand.begin(), _hand.end(), sortS);
 }
@@ -91,7 +94,7 @@ bool hasTwoPairs(vCard& argH) {
 	return (a1 or a2 or a3);
 }
 
-//check is hand contains three of a kind
+//check if hand contains three of a kind
 bool hasThreeofaKind(vCard& hand) {
 	bool a1, a2,a3;
 	sortByFace(hand);
@@ -182,7 +185,3 @@ void betterHand(vCard& _hand1, vCard& _hand2) {
 		cout << "Both hands have equal hand strength" << endl;
 	}
 }
-
-
-
-
