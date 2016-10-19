@@ -126,15 +126,7 @@ bool hasThreeofaKind(vCard& hand) {
 }
 //check if hand contains four of a kind 
 bool hasFourofaKind(vCard& hand) { 
-	/*int k;
-	for(int i=0;i<2;i++){
-		k = i;
-		while(k<i+3 and hand[k].getFace()==hand[k+1].getFace())
-			k++;
-		if(k==i+3)
-			return true;
-	}
-	return false;*/
+
 	bool a1, a2;
 	sortByFace(hand);
 	a1 = hand[0].getFace() == hand[1].getFace() and
