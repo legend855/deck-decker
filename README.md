@@ -38,4 +38,4 @@ and choose whether to swap 1, 2 or 3 cards from their hand.
 The implementation of a similar algorithm for the player is also included in theis file. 
 
 This program isn't totally complete I'm still working on parts involving how the computer 
-evaluates a winning hand. (Work in progress)
+evaluates a winning hand. It's still a work in progress.
