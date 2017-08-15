@@ -34,7 +34,7 @@ void play() {
 			bail=playerTurn(deck1, pHand);
 		}
 	}
-	if(bail=true) {
+	if(bail==true) {
 		pStren=evaluateHand(pHand);
 		dStren=evaluateHand(dHand);
 	}
